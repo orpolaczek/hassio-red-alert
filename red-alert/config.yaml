@@ -1,0 +1,19 @@
+name: Red-Alert add-on
+version: "1.0.0"
+slug: red-alert
+description: Red-Alert notifications Home Assistant add-on
+url: "https://github.com/orpolaczek/hassio-red-alert/tree/main/red-alert"
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+init: false
+map:
+  - share:rw
+options:
+  language: "en"
+schema:
+  language: "str?"
+image: "ghcr.io/orpolaczek/{arch}-hassio-red-alert"
